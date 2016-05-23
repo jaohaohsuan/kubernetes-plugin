@@ -1,4 +1,4 @@
-FROM csanchez/jenkins-for-volumes:1.642.2
+FROM jaohaohsuan/jenkins-for-volumes-docker:latest
 
 COPY src/main/docker/plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt

@@ -1,9 +1,2 @@
-durable-task:1.6
-credentials:1.22
-kubernetes:0.6
-github-api:1.69
-plain-credentials:1.1
-token-macro:1.11
-git:2.4.0
-token-macro:1.11
 github:1.19.2
+kubernetes:0.6

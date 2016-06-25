@@ -1,7 +1,8 @@
 FROM jaohaohsuan/jenkins-for-volumes-docker:latest
 
 COPY src/main/docker/plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+# RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+RUN /usr/local/bin/install-plugins.sh github kubernetes
 
 # ENV VERSION 0.4-SNAPSHOT
 # COPY target/kubernetes.hpi /usr/share/jenkins/ref/plugins/kubernetes.hpi

@@ -1,8 +1,9 @@
 FROM jaohaohsuan/jenkins-for-volumes-docker:latest
 
+ENV JENKINS_UC https://updates.jenkins-ci.org
 # COPY src/main/docker/plugins.txt /usr/share/jenkins/plugins.txt
 # RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/install-plugins.sh github kubernetes git credentials durable-task 
+RUN /usr/local/bin/install-plugins.sh kubernetes github 
 
 # ENV VERSION 0.4-SNAPSHOT
 # COPY target/kubernetes.hpi /usr/share/jenkins/ref/plugins/kubernetes.hpi
